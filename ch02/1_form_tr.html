@@ -4,54 +4,54 @@
 	<head>
 		<meta charset="uTF-8"> 
 		<meta name ="viewport" content="width=device-width, initial-scaLe=1.0">
-		
 		<title>회원가입</title>
 		<style type="text/css">
-
-		table, th, td{
-			border: 1px solid black;
-			border-collapse: collapse;
-		} th, td{ padding: 10px;
-		 		font-size: 12px;
-		} img { width: 12px; 
-		} p { font-size:1px; 
-		} input[type=text] { width:100px; 
-		} th {
-			width:150px;
-			text-align: center;
-			background-color:#dbc1ac;
-		} td { width:750px; 
-		} body { padding:1px 940px 1px 1px;
-		}
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			} th, td { 
+				padding: 10px;
+				font-size: 12px; 
+			} img { width: 12px; 
+			} p { 
+				font-size:1px; 
+				color:brown;
+			} input[type=text] { width:100px; 
+			} th {
+				width:150px;
+				text-align: center;
+				background-color:#C1C4CA;
+			} td { width:750px; 
+			} body { padding:1px 940px 1px 1px; }
 		</style>
 	</head>
 		
 	<body>
+		<h1>회원가입</h1>
 		<form action="./result.html">
-		<h5><img alt="" src="32329.png">기본정보</h5>
-		<p style="text-align:right;"><img alt="" src="100470.png"> 표시 항목은 필수 입력 항목입니다.</p>
+			<h2 style="display:inline"><img alt="설명" src="32329.png" style="width:20px">기본정보</h2>
+			<p style="color:black; text-align:right;">√ 표시 항목은 필수 입력 항목입니다.</p>
 			<table>
 				<tr>
-					<th><img alt="" src="100470.png"> 이름</th>
+					<th>√ 이름</th>
 					<td>
-						<input type="text" name="username" id="username">
-						<br><p><img alt="" src="iconn.png">스토리움 이용시 본인 인증(휴대폰 인증, 아이핀 인증)이 
-						필요할 수 있으므로, 실명으로 적어주시길 바랍니다.
-						</p>
+						<input type="text" name="text"><br>
+						<p><img alt="" src="iconn.png">스토리움 이용시 본인 인증(휴대폰 인증, 아이핀 인증)이 
+						필요할 수 있으므로, 실명으로 적어주시길 바랍니다.</p>
 					</td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 아이디</th>
+					<th>√ 아이디</th>
 					<td>
-						<input type="text" name="userid" id="userid">
+						<input type="text" name="text">
 						<input type="button" value="아이디중복확인">
 						<br><p><img alt="" src="iconn.png">6~16자까지 영문자(소문자), 숫자 사용 가능합니다.</p>
 					</td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 비밀번호</th>
+					<th>√ 비밀번호</th>
 					<td>
-						<input type="password" name="userpw" id="userpw" style="width:100px">
+						<input type="password" name="password" style="width:100px">
 						<br><p><img alt="" src="iconn.png">8~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.
 						<br>비밀번호는 8~16자의 영문 대/소문자, 숫자, 특수문자중 3개 이상의 조합으로 입력해주세요.
 						<br>3자리 연속 이어지는 문자(또는 숫자), 3자리 같은 문자(또는 숫자), 아이디와 같은 비밀번호는 사용하실 수 없습니다.
@@ -59,96 +59,98 @@
 					</td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 비밀번호 확인</th>
-					<td>
-						<input type="password" name="userpw2" id="userpw2" style="width:100px">
-					</td>
+					<th>√ 비밀번호 확인</th>
+					<td> <input type="password" name="password" style="width:100px"></td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 생년월일/성별</th>
+					<th>√ 생년월일/성별</th>
 					<td><input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
 						<input type="radio" name="gender">남자
 						<input type="radio" name="gender">여자
 					</td>
 				<tr>
-					<th><img alt="" src="100470.png"> 이메일</th>
+					<th>√ 이메일</th>
 					<td>
-						<input type="text" name="email" id="email"> @ <input type="text" name="email2" id="email2">
-						<select name="mail" id="">
+						<input type="text" name="text"> @ <input type="text" name="text">
+						<select name="select" id="">
 							<option value="">메일주소선택
 							<option value="1">gmail.com
 							<option value="2">naver.com
 							<option value="3">hanmail.net
+							<option value="4">직접입력
 						</select>
 					</td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 연락처</th>
-					<td>
-						휴대전화 			
-						<select name="tel" id="tel">
+					<th>√ 연락처</th>
+					<td> 휴대전화 			
+						<select name="tel" id="">
 							<option value="">선택
 							<option value="010">010
 							<option value="011">011
 							<option value="019">019
 						</select>
-						-<input type="text" name="mobile2" style="width:50px;">-<input type="text" name="mobile3"style="width:50px";>
+						- <input type="text" name="text" style="width:50px;">
+						- <input type="text" name="text" style="width:50px";>
 						<br>
 						일반전화 						
-						<select name="tel2" id="tel2">
+						<select name="tel2" id="">
 							<option value="">선택
 							<option value="02">02
 							<option value="032">032
 							<option value="031">031
 							</select>
-						-<input type="text" name="tel" style="width:50px;">-<input type="text" name="tel" style="width:50px;">
+						- <input type="text" name="text" style="width:50px;">
+						- <input type="text" name="text" style="width:50px;">
 						<p style="font-size:5px"><img alt="" src="iconn.png">연락처는 둘 중 하나만 입력해도 됩니다.</p>
 					</td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 우편번호</th>
+					<th>√ 우편번호</th>
 					<td>
-						<input type="text" name="addr">
-						<input type="button" name="addrserch" value="주소검색">
+						<input type="text" name="text">
+						<input type="button" name="button" value="주소검색">
 					</td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 주소</th>
+					<th>√ 주소</th>
 					<td>
-						<input type="text" name="addres" style="width:500px;">
+						<input type="text" name="text" style="width:500px;">
 						<br>
-						<input type="text" name="addres2" style="width:500px;">
+						<input type="text" name="text" style="width:500px;">
 					</td>
 				</tr>
 				<tr>
 					<th>정보수신 여부</th>
 					<td>
-						<p style="font-size:3px">서비스 및 이벤트 소식을 <input type="checkbox" name="ademail">Email로 수시하겠습니다.
-						<input type="checkbox" name="adsns">SMS로 수신하겠습니다.</p>
+						<p style="color:black; font-size:3px">서비스 및 이벤트 소식을 <input type="checkbox" name="checkbox">Email로 수시하겠습니다.
+						<input type="checkbox" name="checkbox">SMS로 수신하겠습니다.</p>
 					</td>
+				</tr>
 			</table>
-			<h5><img alt="" src="32329.png">작가정보</h5>
-			<p style="text-align:right;"><img alt="" src="100470.png"> 표시 항목은 필수 입력 항목입니다.</p>
+			<br>
+			<h2 style="display:inline"><img alt="설명" src="32329.png" style="width:20px">작가정보</h2>
+			<p style="color:black; text-align:right;">√ 표시 항목은 필수 입력 항목입니다.</p>
 			<table>
 				<tr>
 					<th>프로필이미지</th>
-					<td><input type="file" name="picture" value="파일 선택"></td>
+					<td><input type="file" name="file"></td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 필명</th>
+					<th>√ 필명</th>
 					<td>
-						<input type="text" name="nickname">
+						<input type="text" name="name">
 						<br><p><img alt="" src="iconn.png">필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)</p>
 					</td>
 				</tr>
 				<tr>
 					<th>대표작</th>
-					<td><input type="text" name="good" style="width:715px;"></td>
+					<td><input type="text" name="text" style="width:715px;"></td>
 				</tr>
 				<tr>
 					<th>수상내역</th>
 					<td>
-						<textarea rows="20" cols="100" name="contents"></textarea>
+						<textarea rows="20" cols="100" name="textarea"></textarea>
 						<br>
 						<p><img alt="" src="iconn.png">여러 수상내역을 등록시 콤마(,)로 구분하여 등록해 주시기 바랍니다.</p>
 					</td>
@@ -156,10 +158,10 @@
 				<tr>
 					<th>주요작품</th>
 					<td>
-						<input type="text" name="story" style="width:300px;" placeholder="스토리 제목을 입력하세요.">
-						<input type="text" name="story2" style="width:300px;" placeholder="해당 스토리의 역할을 입력하세요.">
-						<input type="button" name="del" value="삭제">
-						<input type="button" name="add" value="추가">
+						<input type="text" name="text" style="width:300px;" placeholder="스토리 제목을 입력하세요.">
+						<input type="text" name="text" style="width:300px;" placeholder="해당 스토리의 역할을 입력하세요.">
+						<input type="button" name="button" value="삭제">
+						<input type="button" name="button" value="추가">
 						<br>
 						<p><img alt="" src="iconn.png">본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.
 						<br>(역할은 메인작가, 공동작가, 보조작가, 각색, 각본 등 본인 역할을 정확히 기재해 주시기 바랍니다.)</p>
@@ -168,50 +170,55 @@
 				<tr>
 					<th>작가정보공개설정</th>
 					<td>
-						<input type="radio" name="opne">공개
-						<input type="radio" name="opne">비공개
+						<input type="radio" name="radio">공개
+						<input type="radio" name="radio">비공개
 					</td>
 				</tr>
 			</table>
 			<br>
+			<center> 
+				<input type="submit" name="submit" value="√ 제출">
+				<input type="reset" name="reset" value="취소">
+			</center>
+			<br>
 			<table>
 				<tr>
 					<th>소속(회사)</th>
-					<td><input type="text" name="company" style="width:200px;"></td>
+					<td><input type="text" name="text" style="width:200px;"></td>
 				</tr>
 				<tr>
 					<th>사업자등록번호</th>
 					<td> 
-						<input type="text" name="companynum1" style="width:70px;"> -
-						<input type="text" name="companynum2" style="width:50px;"> - <input type="text" name="companynum3" style="width:100px;">
+						<input type="text" name="text" style="width:70px;"> -
+						<input type="text" name="text" style="width:50px;"> - <input type="text" name="companynum3" style="width:100px;">
 					</td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 사업자등록증(첨부)</th>
+					<th>√ 사업자등록증(첨부)</th>
 					<td>
-						<input type="button" name="businessregistration" value="파일 선택"	><lable>선택된 파일 없음</lable>
+						<input type="file" name="file">
 						<br>
 						<p><img alt="" src="iconn.png">소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 파일만 업로드 가능 / PDF파일 업로드 불가)</p>
 					</td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 분야</th>
+					<th>√ 분야</th>
 					<td>
 						<input type="checkbox" name="field">영화
 						<input type="checkbox" name="field2">방송
 						<input type="checkbox" name="field3">공연/예술
 						<input type="checkbox" name="field4">투자/배급
 						<input type="checkbox" name="field5">캐릭터/애니메이션
-						<input type="checkbox" name="field6">기타	<input type="text" name="field6">	
+						<input type="checkbox" name="field6">기타	<input type="text" name="text">	
 					</td>
 				</tr>
 				<tr>
-					<th><img alt="" src="100470.png"> 직종</th>
+					<th>√ 직종</th>
 					<td>
 						<input type="checkbox" name="job">제작자
 						<input type="checkbox" name="job2">투자자
 						<input type="checkbox" name="job3">에이전트
-						<input type="checkbox" name="job4">기타	 <input type="text" name="job4">
+						<input type="checkbox" name="job4">기타	 <input type="text" name="text">
 					</td>
 				</tr>
 				<tr>
@@ -221,9 +228,9 @@
 						<input type="date" min="1900-01-01" max="2022-6-29"> ~ 
 						<input type="date" min="1900-01-01" max="2022-6-29">
 						<input type="text" name="text" style="width:150px;" placeholder="사업내용을 입력해주세요">
-						<input type="text" name="responsibilities" style="width:150px;" placeholder="담당업무를 입력해주세요">
-						<input type="button" name="del2" value="삭제">
-						<input type="button" name="add2" value="추가">
+						<input type="text" name="text" style="width:150px;" placeholder="담당업무를 입력해주세요">
+						<input type="button" name="button" value="삭제">
+						<input type="button" name="button" value="추가">
 					</td>
 				</tr>
 			</table>
