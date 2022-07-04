@@ -9,9 +9,14 @@
 			table, th, td {
 			border: 1px solid black;
 			border-collapse: collapse; 
-			margin: auto; }
-			th, td{ padding: 10px; }
-			caption { text-align:left; }
+
+			}
+			th, td	{ 
+			padding: 10px; 
+			}
+			body {
+				margin: 1px 500px 1px 500px; 
+			}
 		</style>
 	</head>
 	
@@ -46,10 +51,10 @@
 			<br>
 			<table>
 				<tr>
-					<caption><strong>□기본정보</strong></caption>
-					<th height="200px" width="200px" rowspan="6">
-						<input type="file" name="file">
-						<em>정장차림의 증명사진<br>넣으시면<br>됩니다.단축키<br>ctrl+N+I</em><br>
+					<strong>□기본정보</strong>
+					<th rowspan="6">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTActcXThY2PcHxMwpkbYf1l7KRVVao5JkUNA&usqp=CAU">
+						<br><input type="file" name="file" style="width: 75px;">
 					</td>
 					<td align="center" style="width:100px; background-color:#99ccd9;">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
 					<td width="260px"><input type="text" value="강만식"></td>
@@ -98,17 +103,17 @@
 							<option value="4">직접입력
 						</select></td>
 					<td align="center" style="background-color:#99ccd9;">나이</td>
-					<td><input type="number"></td>
+					<td><input type="number" value="48"></td>
 				</tr>
 				<tr>
 					<td align="center" style="background-color:#99ccd9;">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp소</td>
-					<td colspan="3"><input type="text" name="text">
+					<td colspan="3"><input type="text" name="text" value="인천광역시 부평구">
 						<input type="button" name="button" value="주소검색">
-						<br><input type="text" name="text" style="width:500px;"></td>
+						<br><input type="text" name="text" value="문화로 128번길 10, 하이테크빌라 1805호" style="width: 500px;"></td>
 				</tr>
 				<tr>
 					<td align="center" style="background-color:#99ccd9;">취미생활</td>
-					<td colspan="3";><input type="text" name="text"></td>
+					<td colspan="3";><input type="text" name="text" value="영화감상"></td>
 				</tr>			
 			</table>
 			<br>
@@ -126,32 +131,32 @@
 				<tbody>
 					<tr>
 						<td align="center">
-							<input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
-							<br>~ <input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29"></td>
-						<td align="center"><input type="text" name="text"></td>
+							<input type="date" value="2017-03-02" min="1900-01-01" max="2022-6-29">
+							<br>~ <input type="date" value="2021-02-18" min="1900-01-01" max="2022-6-29"></td>
+						<td align="center"><input type="text" name="text" value="서울대학교"></td>
 						<td align="center"> 
 							<select name="select" id="">
-								<option value="">구분
+								<option value="">졸업
 								<option value="1">졸업
 								<option value="2">재학중
 							</select>
 						</td>
-						<td align="center"><input type="text" name="text" style="width:100px;"></td>
-						<td align="center"><input type="text" name="text" style="width:70px;"></td>
+						<td align="center"><input type="text" name="text" value="컴퓨터공학과"style="width:100px;"></td>
+						<td align="center"><input type="text" name="text" value="서울"style="width:70px;"></td>
 					</tr>
 					<tr>
-						<td align="center"><input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
-							<br>~ <input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29"></td>
-						<td align="center" style="color:orange;">oo고등학교</td>
+						<td align="center"><input type="date" value="2014-03-02" min="1900-01-01" max="2022-6-29">
+							<br>~ <input type="date" value="2017-02-18" min="1900-01-01" max="2022-6-29"></td>
+						<td align="center"><input type="text" name="text" value="서울고등학교"></td>
 						<td align="center"> 
 							<select name="select" id="">
-								<option value="">구분
+								<option value="">졸업
 								<option value="1">졸업
 								<option value="2">재학중
 							</select>
 						</td>
 						<td align="center" style="color:orange;">-</td>
-						<td align="center"><input type="text" name="text" style="width:70px;"></td>
+						<td align="center"><input type="text" name="text" value="서울" style="width:70px;"></td>
 					</tr>
 				</tbody>
 			</table>
