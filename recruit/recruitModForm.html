@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="uTF-8"> 
+		<meta name ="viewport" content="width=device-width, initial-scaLe=1.0">
+		<title>입사지원서</title>
+		<style type="text/css">
+			table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse; 
+			margin: auto; }
+			th, td{ padding: 10px; }
+			caption { text-align:left; }
+		</style>
+	</head>
+	
+	<body>
+		<form>
+			<h2 align="center"><mark>입사지원서</mark></h2>
+			<table>
+				<tr>
+					<td align="center" width="150px" style="height:5px; background-color:#99ccd9;">지원분야</td>
+					<td width="150px">			
+						<select name="job" id="">
+							<option value="">개발자
+							<option value="1">CS
+							<option value="2">개발자
+							<option value="3">물류팀
+						</select>
+					</td>
+					<td align="center" width="150px"style="height:5px; background-color:#99ccd9;">경력구분</td>
+					<td align="center" width="150px">						
+						<select name="">
+								<option value="">신입
+								<option value="1">신입
+								<option value="2">경력직(1~5년)
+								<option value="3">경력직(5~10년)
+								<option value="4">경력직(10년~)
+						</select>
+					</td>
+					<td align="center" width="150px" style="height:5px; background-color:#99ccd9;">희망연봉</td>
+					<td align="center" width="150px">회사 내규에 따름</td>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<tr>
+					<caption><strong>□기본정보</strong></caption>
+					<th height="200px" width="200px" rowspan="6">
+						<input type="file" name="file">
+						<em>정장차림의 증명사진<br>넣으시면<br>됩니다.단축키<br>ctrl+N+I</em><br>
+					</td>
+					<td align="center" style="width:100px; background-color:#99ccd9;">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
+					<td width="260px"><input type="text" value="강만식"></td>
+					<td align="center" style="width:100px; background-color:#99ccd9;">한&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
+					<td width="260px"><input type="text" value="姜萬植"></td>
+				</tr>
+				<tr>
+					<td align="center" style="background-color:#99ccd9;">영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
+					<td><input type="text"value="Kang Man Sik"></td>
+					<td align="center" style="background-color:#99ccd9;">생년월일</td>
+					<td><input type="date" value="1975-07-04" min="1900-01-01" max="2022-6-29"></td>
+				</tr>
+				<tr>
+					<td align="center" style="background-color:#99ccd9;">전화번호</td>
+					<td> 			
+						<select name="tel" id="">
+							<option value="">010
+							<option value="010">010
+							<option value="011">011
+							<option value="019">019
+						</select>
+						- <input type="text" name="text" value="1234" style="width: 50px;">
+						- <input type="text" name="text" value="5678" style="width: 50px";>
+					</td>
+					<td align="center" style="background-color:#99ccd9;">비상연락망</td>
+					<td>
+						<select name="tel" id="">
+							<option value="">선택
+							<option value="010">010
+							<option value="011">011
+							<option value="019">019
+						</select>
+						- <input type="text" name="text" style="width:50px;">
+						- <input type="text" name="text" style="width:50px";></td></td>
+					</td>
+				</tr>
+				<tr>
+					<th>이메일</th>
+					<td>
+						<input type="text" name="text" value="abcd"style="width:50px";> @ <input type="text" name="text" value="abcd.net" style="width:55px";>
+						<select name="select" id="">
+							<option value="">직접입력
+							<option value="1">gmail.com
+							<option value="2">naver.com
+							<option value="3">hanmail.net
+							<option value="4">직접입력
+						</select></td>
+					<td align="center" style="background-color:#99ccd9;">나이</td>
+					<td><input type="number"></td>
+				</tr>
+				<tr>
+					<td align="center" style="background-color:#99ccd9;">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp소</td>
+					<td colspan="3"><input type="text" name="text">
+						<input type="button" name="button" value="주소검색">
+						<br><input type="text" name="text" style="width:500px;"></td>
+				</tr>
+				<tr>
+					<td align="center" style="background-color:#99ccd9;">취미생활</td>
+					<td colspan="3";><input type="text" name="text"></td>
+				</tr>			
+			</table>
+			<br>
+			<table>
+				<caption><strong>□학력사항 (최신이력이 가장 위로)</strong></caption>
+				<thead>
+					<tr>
+						<td align="center" style="background-color:#99ccd9;width:200px;">기간</td>
+						<td align="center" style="background-color:#99ccd9;width:320px;">출신학교</td>
+						<td align="center" style="background-color:#99ccd9;width:100px;">구분</td>
+						<td align="center" style="background-color:#99ccd9;width:200px;"><mark>학과</mark></td>
+						<td align="center" style="background-color:#99ccd9;width:100px;">소재지</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td align="center">
+							<input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
+							<br>~ <input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29"></td>
+						<td align="center"><input type="text" name="text"></td>
+						<td align="center"> 
+							<select name="select" id="">
+								<option value="">구분
+								<option value="1">졸업
+								<option value="2">재학중
+							</select>
+						</td>
+						<td align="center"><input type="text" name="text" style="width:100px;"></td>
+						<td align="center"><input type="text" name="text" style="width:70px;"></td>
+					</tr>
+					<tr>
+						<td align="center"><input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
+							<br>~ <input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29"></td>
+						<td align="center" style="color:orange;">oo고등학교</td>
+						<td align="center"> 
+							<select name="select" id="">
+								<option value="">구분
+								<option value="1">졸업
+								<option value="2">재학중
+							</select>
+						</td>
+						<td align="center" style="color:orange;">-</td>
+						<td align="center"><input type="text" name="text" style="width:70px;"></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<table>
+				<caption><strong><mark>□교육연수</mark></strong></caption>
+				<thead>
+					<tr>
+						<td align="center" style="background-color:#99ccd9;width:130px;">연수기간</td>
+						<td align="center" style="background-color:#99ccd9;width:200px;">연수기관</td>
+						<td align="center" style="background-color:#99ccd9;width:600px;">연수과정 및 내용</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td align="center">
+							<input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
+							<br>~ <input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
+						</td>
+						<td align="center""><input type="text" style="width:100px;"></td>
+						<td align="center"">
+							<textarea rows="10" cols="87" name="contents" placeholder=""></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table><br>
+			<table>
+				<caption><strong><mark>□자격사항</mark></strong></caption>
+				<thead>
+					<tr>
+						<td align="center" style="background-color:#99ccd9;width:100px;">취득일</td>
+						<td align="center" style="background-color:#99ccd9;width:130px;">종류 및 등급</td>
+						<td align="center" style="background-color:#99ccd9;width:130px;">발행처</td>
+						<td align="center" style="background-color:#99ccd9;width:580px;">보유기술 및 수준</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29"></td>
+						<td align="center" style="color:orange;"><input type="text" style="width:100px;"></td>
+						<td align="center" style="color:orange;"><input type="text" style="width:100px;"></td>
+						<td><textarea rows="2" cols="78" name="contents" placeholder=""></textarea></td>
+					</tr>
+					<tr>
+						<td><input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29"></td>
+						<td align="center" style="color:orange;"><input type="text" style="width:100px;"></td>
+						<td align="center" style="color:orange;"><input type="text" style="width:100px;"></td>
+						<td><textarea rows="2" cols="78" name="contents" placeholder=""></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<table>
+				<caption><strong>□경력사항 (4대 보험 가입 경력)</strong></caption>
+				<thead>
+					<tr>
+						<td align="center" height=10px style=background-color:#99ccd9;width:100px;">활동기간</td>
+						<td align="center" style="background-color:#99ccd9;width:300px;">기관</td>
+						<td align="center" style="background-color:#99ccd9;width:100px;">담당업무</td>
+						<td align="center" style="background-color:#99ccd9;width:440px;">경험 및 습득역량</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td align="center"><input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
+							<br>~ <input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29"></td>
+						<td><input type="text" style="width:300px;"></td>
+						<td><input type="text" style="width:100px;"></td>
+						<td><textarea rows="2" cols="60" name="contents" placeholder=""></textarea></td>
+					</tr>
+					<tr>
+						<td align="center"><input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
+							<br>~ <input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29"></td>
+						<td><input type="text" style="width:300px;"></td>
+						<td><input type="text" style="width:100px;"></td>
+						<td><textarea rows="2" cols="60" name="contents" placeholder=""></textarea></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
+							<br>~ <input type="date" value="2022-06-29" min="1900-01-01" max="2022-6-29">
+						</td>
+						<td><input type="text" style="width:300px;"></td>
+						<td><input type="text" style="width:100px;"></td>
+						<td><textarea rows="2" cols="60" name="contents" placeholder=""></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<center><input type="button" value="제출하기" style="width:200px; height:50px;" onClick="location.href='./recruitList.html'"></center>
+		</form>
+	</body>
+</html>

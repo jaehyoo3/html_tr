@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="uTF-8"> 
+		<meta name ="viewport" content="width=device-width, initial-scaLe=1.0">
+		<title>List</title>
+		<style type="text/css">
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				margin-left:auto; 
+				margin-right:auto;
+				text-align:center;
+			}
+			th, td{ 
+				padding: 10px; 
+			} 
+			body { 
+ 				font-size: 90.5%;
+				padding:1px 540px 1px 540px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form>
+			<center><h1>입사지원자 관리</h1></center>
+			<br>
+			<center><input type="text" id="serch" placeholder="검색 할 내용을 입력하세요." style="width:500px; height:20px;">
+			<input type="button" id="serchh" value="검색"></center>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td>선택</td>
+					<td>번호</td>
+					<td>지원분야</td>
+					<td>경력구분</td>
+					<td>이름</td>
+					<td>나이</td>
+					<td style="width:150px">이메일</td>
+					<td>전화번호</td>
+					<td>입사지원서</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="hobby"></td>
+					<td>1</td>
+					<td>개발자</td>
+					<td>신입</td>
+					<td>강만식</td>
+					<td>48</td>
+					<td>abcd@net.kr</td>
+					<td>010-1234-5678</td>
+					<td><input type="button" id="jobb" value="원서 보기" onClick="location.href='./recruitView.html'"></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="hobby"></td>
+					<td>2</td>
+					<td>CS</td>
+					<td>신입</td>
+					<td>김희자</td>
+					<td>57</td>
+					<td>abcd@plz.kr</td>
+					<td>010-1784-5618</td>
+					<td><input type="button" id="jobb" value="자세히보기" onClick="location.href='../ch01/3_table_tr3.html'"></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="hobby"></td>
+					<td>3</td>
+					<td>CS</td>
+					<td>신입</td>
+					<td>윤춘식</td>
+					<td>49</td>
+					<td>a435@xsdfsd.kr</td>
+					<td>010-1546-2342</td>
+					<td><input type="button" id="jobb" value="자세히보기" onClick="location.href='../ch01/3_table_tr3.html'"></td>
+				</tr>
+			</table>
+			<br>
+			<div style="float:right";><input type="button" value="추가" onClick="location.href='./recruitRegForm.html'"><input type="button" value="수정" onClick="location.href='./recruitModForm.html'"><input type="button" value="삭제"></div>
+		</form>
+		<script type= "text/javascript">
+		</script>
+	</body>
+</html>
