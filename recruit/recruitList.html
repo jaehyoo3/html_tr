@@ -4,144 +4,95 @@
 	<head>
 		<meta charset="uTF-8"> 
 		<meta name ="viewport" content="width=device-width, initial-scaLe=1.0">
-		<title>List</title>
-		<style type="text/css">
-			#list { width: 900px; margin: 0 auto; }
-			#list .head .logo { padding: 10px 0; }
-			#list .head .logo a {
-				 font-family: Arial; font-size: 30px; font-weight: bold; color: #7F7F7F; text-decoration: none; 
-			}
-			#list .head { margin-top: 20px; text-align: center; }
-			#list .head .menu { 
-				position: relative; 
-				background-color: #575757; 
-				margin-top: 10px;
-				height: 30px; 
-			}
-			#list .head .menu .left {
-				 position: absolute; 
-				 top: 5px; 
-				 right: 0;
-			}
-			#list .head .menu ul { 
-				margin: 0; 
-				padding: 0; 
-				list-style: none; 
-			}
-			#list .head .menu ul li { 
-				border-left: 1px solid #EFEFEF;
-				 float: left; 
-				 padding: 3px 10px; 
-			}
-			#list .head .menu ul li a {
-				text-decoration: none;
-				color: #F1F1F1; 
-			}
-			#list .content { 
-				min-height: 450px; 
-				background-color: #FFF; 
-				border: 1px solid #E0E0E0; 
-				border-top: 0; 
-				padding: 5px; 
-				color: #5E5E5E;
-			}
-			.but {
-				background-color: #ce6d39;
-   				color: #ffeee4;
-   			 }
-			table, th, td {
-				border: 1px solid black;
-				border-collapse: collapse;
-				margin-left:auto; 
-				margin-right:auto;
-				text-align:center;
-			}
-			table {
-				margin-top: 10px;
-			}
-			th, td{ 
-				padding: 10px; 
-			} 
-			body { 
-				margin: 0; 
-				padding: 0; 
-				font-family: dotum; 
-				font-size: 12px; 
-				background-color: #F3F3F3; 
-			}
-
-		</style>
+		<title>list</title>
+		<link href="./css/style.css" rel="stylesheet" type="text/css">
 	</head>
-	
 	<body>
 	<form>
-	<div id="list">
-		<div class="head">
-			<div class="logo"><a href="#">Management</a></div>
-			<div class="menu">
-				<div class="left">
-					<ul>
-						<li onClick="location.href='./recruitRegForm.html'"><a href="#">추가</a></li>
-						<li><a href="#">삭제</a></li>
-						<li onClick="location.href='./recruitModForm.html'""><a href="#">수정</a></li>
-					</ul>
-				</div>  
-			</div>
-			<div class="content">
-				<table>
+		<div id="list">
+			<div class="head">
+				<div class="logo"><a href="#"><img src="image/audit.png"> Management</a></div>
+					<div class="menu">
+						<div class="left">
+							<ul>
+								<li onClick="location.href='./recruitRegForm.html'"><a href="#">추가</a></li>
+								<li onClick="next();"><a href="#">삭제</a></li>
+							</ul>
+						</div>  
+					</div>
+				<div class="content">
 					<h1> 지원자 목록</h1>
-					<tr>
-						<td>선택</td>
-						<td>번호</td>
-						<td>지원분야</td>
-						<td>경력구분</td>
-						<td>이름</td>
-						<td>나이</td>
-						<td style="width:150px">이메일</td>
-						<td>전화번호</td>
-						<td>입사지원서</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="hobby"></td>
-						<td>1</td>
-						<td>개발자</td>
-						<td>신입</td>
-						<td>강만식</td>
-						<td>48</td>
-						<td>abcd@net.kr</td>
-						<td>010-1234-5678</td>
-						<td><input type="button" id="jobb" value="원서 보기" onClick="location.href='./recruitView.html'"></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="hobby"></td>
-						<td>2</td>
-						<td>CS</td>
-						<td>신입</td>
-						<td>김희자</td>
-						<td>57</td>
-						<td>abcd@plz.kr</td>
-						<td>010-1784-5618</td>
-						<td><input type="button" id="jobb" value="자세히보기" onClick="location.href='../ch01/3_table_tr3.html'"></td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" name="hobby"></td>
-						<td>3</td>
-						<td>CS</td>
-						<td>신입</td>
-						<td>윤춘식</td>
-						<td>49</td>
-						<td>a435@xsdfsd.kr</td>
-						<td>010-1546-2342</td>
-						<td><input type="button" id="jobb" value="자세히보기" onClick="location.href='../ch01/3_table_tr3.html'"></td>
-					</tr>
-				</table>
-				<br>
-				<input type="text" style="width:150px"> <input type="button" value="검색">
+					<br>
+					<input type="search" name="search" placeholder="search"autocomplete="off"/>
+					<br><br>
+					<table>
+						<tr>
+							<td>선택</td>
+							<td>번호</td>
+							<td>지원분야</td>
+							<td>경력구분</td>
+							<td>이름</td>
+							<td>나이</td>
+							<td style="width:150px">이메일</td>
+							<td>전화번호</td>
+							<td>입사지원서</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="hobby"></td>
+							<td>1</td>
+							<td>개발자</td>
+							<td>신입</td>
+							<td>강만식</td>
+							<td>48</td>
+							<td>abcd@net.kr</td>
+							<td>010-1234-5678</td>
+							<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="hobby"></td>
+							<td>2</td>
+							<td>CS</td>
+							<td>신입</td>
+							<td>김희자</td>
+							<td>57</td>
+							<td>abcd@plz.kr</td>
+							<td>010-1784-5618</td>
+							<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="hobby"></td>
+							<td>3</td>
+							<td>CS</td>
+							<td>신입</td>
+							<td>윤춘식</td>
+							<td>49</td>
+							<td>a435@xsdfsd.kr</td>
+							<td>010-1546-2342</td>
+							<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="hobby"></td>
+							<td>4</td>
+							<td>물류팀</td>
+							<td>경력직(10년~)</td>
+							<td>강문수</td>
+							<td>58</td>
+							<td>nnnyyt@yyy.kr</td>
+							<td>010-3335-7584</td>
+							<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
+						</tr>
+					</table>
+					<br>
+				</div>
 			</div>
-			<br>
 		</form>
-		</div>
 		<script type= "text/javascript">
+				function next(){
+					if(confirm("삭제하시겠습니까 ?")) {
+						alert('삭제 되었습니다.');
+					} else {
+					}
+				}
 		</script>
 	</body>
 </html>

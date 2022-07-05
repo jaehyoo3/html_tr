@@ -1,0 +1,89 @@
+			#list { 
+			width: 900px; 
+			margin: 0 auto; 
+			}
+			#list .head .logo { 
+				padding: 10px 0; 
+			}
+			#list .head .logo a {
+				 font-family: Arial; 
+				 font-size: 30px; 
+				 font-weight: bold; 
+				 color: #7F7F7F; 
+				 text-decoration: none; 
+			}
+			#list .head { 
+				margin-top: 20px;
+				text-align: center; 
+			}
+			#list .head .menu { 
+				position: relative; 
+				background-color: #575757; 
+				margin-top: 10px;
+				height: 30px; 
+			}
+			#list .head .menu .left {
+				position: absolute; 
+				top: 5px; 
+				right: 0;
+			}
+			#list .head .menu ul { 
+				margin: 0; 
+				padding: 0; 
+				list-style: none; 
+			}
+			#list .head .menu ul li { 
+				border-left: 1px solid #EFEFEF;
+				float: left; 
+				padding: 3px 10px; 
+			}
+			#list .head .menu ul li a {
+				text-decoration: none;
+				color: #F1F1F1; 
+			}
+			#list .content { 
+				min-height: 450px; 
+				background-color: #FFF; 
+				border: 1px solid #E0E0E0; 
+				border-top: 0; 
+				padding: 5px; 
+				color: #5E5E5E;
+			}
+
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				margin-left:auto; 
+				margin-right:auto;
+				text-align:center;
+			}
+			table {
+				margin-top: 0px;
+			}
+			th, td{ 
+				padding: 10px; 
+			}
+			img {
+				width: 30px;
+			}
+			input[type=search] {
+				border: 1px solid #cccccc;
+				padding: 4px 1px;
+				width: 120px;
+				margin: 0px 640px 0px 50px;
+			}
+			input::-webkit-input-placeholder{
+				background-image: url(../image/icccon.png);
+				background-size: contain;
+				background-position: 1px left;
+				background-repeat: no-repeat;
+				text-align: center;
+				text-indent: 0;
+			}
+			body { 
+				margin: 0; 
+				padding: 0; 
+				font-family: dotum; 
+				font-size: 12px; 
+				background-color: #F3F3F3; 
+			}
