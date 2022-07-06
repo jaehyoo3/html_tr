@@ -7,92 +7,94 @@
 		<title>list</title>
 		<link href="./css/style.css" rel="stylesheet" type="text/css">
 	</head>
+	
 	<body>
-	<form>
-		<div id="list">
-			<div class="head">
-				<div class="logo"><a href="#"><img src="image/audit.png"> Management</a></div>
+		<form>
+			<div id="list">
+				<div class="head">
+					<div class="logo"><a href="#"><img src="image/audit.png"> Management</a></div>
 					<div class="menu">
 						<div class="left">
 							<ul>
 								<li onClick="location.href='./recruitRegForm.html'"><a href="#">추가</a></li>
-								<li onClick="next();"><a href="#">삭제</a></li>
+								<li onClick="del();"><a href="#">삭제</a></li>
 							</ul>
 						</div>  
 					</div>
-				<div class="content">
-					<h1> 지원자 목록</h1>
-					<br>
-					<input type="search" name="search" placeholder="search"autocomplete="off"/>
-					<br><br>
-					<table>
-						<tr>
-							<td>선택</td>
-							<td>번호</td>
-							<td>지원분야</td>
-							<td>경력구분</td>
-							<td>이름</td>
-							<td>나이</td>
-							<td style="width:150px">이메일</td>
-							<td>전화번호</td>
-							<td>입사지원서</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="hobby"></td>
-							<td>1</td>
-							<td>개발자</td>
-							<td>신입</td>
-							<td>강만식</td>
-							<td>48</td>
-							<td>abcd@net.kr</td>
-							<td>010-1234-5678</td>
-							<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="hobby"></td>
-							<td>2</td>
-							<td>CS</td>
-							<td>신입</td>
-							<td>김희자</td>
-							<td>57</td>
-							<td>abcd@plz.kr</td>
-							<td>010-1784-5618</td>
-							<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="hobby"></td>
-							<td>3</td>
-							<td>CS</td>
-							<td>신입</td>
-							<td>윤춘식</td>
-							<td>49</td>
-							<td>a435@xsdfsd.kr</td>
-							<td>010-1546-2342</td>
-							<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="hobby"></td>
-							<td>4</td>
-							<td>물류팀</td>
-							<td>경력직(10년~)</td>
-							<td>강문수</td>
-							<td>58</td>
-							<td>nnnyyt@yyy.kr</td>
-							<td>010-3335-7584</td>
-							<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
-						</tr>
-					</table>
-					<br>
+					<div class="content">
+						<h1> 지원자 목록</h1>
+						<br>
+						<input type="search" name="search" placeholder="search"autocomplete="off"/>
+						<br><br>
+						<table>
+							<tr>
+								<td></td>
+								<td>번호</td>
+								<td>지원분야</td>
+								<td>경력구분</td>
+								<td>이름</td>
+								<td>나이</td>
+								<td style="width:150px">이메일</td>
+								<td>전화번호</td>
+								<td>입사지원서</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk"></td>
+								<td>1</td>
+								<td>개발자</td>
+								<td>신입</td>
+								<td>강만식</td>
+								<td>48</td>
+								<td>abcd@net.kr</td>
+								<td>010-1234-5678</td>
+								<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk"></td>
+								<td>2</td>
+								<td>CS</td>
+								<td>신입</td>
+								<td>김희자</td>
+								<td>57</td>
+								<td>abcd@plz.kr</td>
+								<td>010-1784-5618</td>
+								<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk"></td>
+								<td>3</td>
+								<td>CS</td>
+								<td>신입</td>
+								<td>윤춘식</td>
+								<td>49</td>
+								<td>a435@xsdfsd.kr</td>
+								<td>010-1546-2342</td>
+								<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk"></td>
+								<td>4</td>
+								<td>물류팀</td>
+								<td>경력직(10년~)</td>
+								<td>강문수</td>
+								<td>58</td>
+								<td>nnnyyt@yyy.kr</td>
+								<td>010-3335-7584</td>
+								<td><a href="#"><img src="image/icon.png" onClick="location.href='./recruitView.html'"></a></td>
+							</tr>
+						</table>
+						<br>
+					</div>
 				</div>
 			</div>
 		</form>
 		<script type= "text/javascript">
-				function next(){
-					if(confirm("삭제하시겠습니까 ?")) {
-						alert('삭제 되었습니다.');
-					} else {
-					}
+			function del(){
+				if(confirm("삭제하시겠습니까 ?")) {
+					alert('삭제 되었습니다.');
+				} else {
 				}
+			}
 		</script>
 	</body>
 </html>
