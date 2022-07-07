@@ -7,11 +7,15 @@
 		
 		<title>신재효</title>
 		<style type="text/css">
+			#wrap {
+				width:100%;
+			}
 			 #gnv {
 				height: 100px;
 				background-color:skyblue;
 			} #right {
 				float: left;
+				width:90%;
 			} #left {
 				float: left;
 				width: 10%
@@ -47,72 +51,74 @@
 	
 	<body>
 	<form>
-		<div id="gnv">
-			<ul class="ul">
-				<li class="b">Home
-				<li class="b">서비스관리
-				<li class="b">연계시스템 관리
-			</ul></div>
-		<div id="left">
-			<ul class="a">
-				<li>회원관리</li>
-				<li>사이트관리</li>
-				<li>커뮤니케이션관리</li>
-				<li>템플릿관리</li>
-				<li>로그관리</li>
-				<li>통계</li>
-			</ul>
+		<div id="wrap"></div>
+			<div id="gnv">
+				<ul class="ul">
+					<li class="b">Home
+					<li class="b">서비스관리
+					<li class="b">연계시스템 관리
+				</ul></div>
+			<div id="left">
+				<ul class="a">
+					<li>회원관리</li>
+					<li>사이트관리</li>
+					<li>커뮤니케이션관리</li>
+					<li>템플릿관리</li>
+					<li>로그관리</li>
+					<li>통계</li>
+				</ul>
+				</div>
+				<div id="right">
+					<h2>회원관리</h2>
+					<table>
+						<tr>
+							<td><input type=checkbox></td>
+							<td>번호</td>
+							<td>이름</td>
+							<td>아이디</td>
+							<td>연락처</td>
+							<td>이메일</td>
+							<td>주소</td>
+							<td>가입일</td>
+							<td>수정일</td>
+						</tr>
+						<tr>
+							<td><input type=checkbox></td>
+							<td>3</td>
+							<td>홍길동</td>
+							<td>honggildong</td>
+							<td>010-9999-9999</td>
+							<td>aaaa@co.kr</td>
+							<td>서울특별시 성동구 동일로</td>
+							<td>2022.05.05</td>
+							<td>2022.07.06</td>
+						</tr>
+						<tr>
+							<td><input type=checkbox></td>
+							<td>2</td>
+							<td>둘리</td>
+							<td>dolee</td>
+							<td>010-1234-5678</td>
+							<td>dole@co.kr</td>
+							<td>서울특별시 강남구 청담동</td>
+							<td>2021.04.19</td>
+							<td>2022.02.03</td>
+						</tr>
+						<tr>
+							<td><input type=checkbox></td>
+							<td>1</td>
+							<td>강보라</td>
+							<td>kangbora</td>
+							<td>010-1264-5678</td>
+							<td>bora@co.kr</td>
+							<td>서울특별시 용산구 용산대로</td>
+							<td>2020.09.25</td>
+							<td>2021.08.15</td>
+						</tr>
+					</table>
+				</div>
+				<div id="footer"><center>copy right</center></div>
 			</div>
-			<div id="right">
-				<h2>회원관리</h2>
-				<table>
-					<tr>
-						<td><input type=checkbox></td>
-						<td>번호</td>
-						<td>이름</td>
-						<td>아이디</td>
-						<td>연락처</td>
-						<td>이메일</td>
-						<td>주소</td>
-						<td>가입일</td>
-						<td>수정일</td>
-					</tr>
-					<tr>
-						<td><input type=checkbox></td>
-						<td>3</td>
-						<td>홍길동</td>
-						<td>honggildong</td>
-						<td>010-9999-9999</td>
-						<td>aaaa@co.kr</td>
-						<td>서울특별시 성동구 동일로</td>
-						<td>2022.05.05</td>
-						<td>2022.07.06</td>
-					</tr>
-					<tr>
-						<td><input type=checkbox></td>
-						<td>2</td>
-						<td>둘리</td>
-						<td>dolee</td>
-						<td>010-1234-5678</td>
-						<td>dole@co.kr</td>
-						<td>서울특별시 강남구 청담동</td>
-						<td>2021.04.19</td>
-						<td>2022.02.03</td>
-					</tr>
-					<tr>
-						<td><input type=checkbox></td>
-						<td>1</td>
-						<td>강보라</td>
-						<td>kangbora</td>
-						<td>010-1264-5678</td>
-						<td>bora@co.kr</td>
-						<td>서울특별시 용산구 용산대로</td>
-						<td>2020.09.25</td>
-						<td>2021.08.15</td>
-					</tr>
-				</table>
-			</div>
-		<div id="footer"><center>copy right</center></div>
 		</form>
 	</body>
 </html>
