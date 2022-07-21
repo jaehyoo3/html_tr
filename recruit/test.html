@@ -37,7 +37,11 @@
 			} #event {
 				width: 75%;
 				margin: auto;
-			} #footer {
+			} #event .box {
+				width: 100%;
+				border: 1px solid #444444;
+			}
+			#footer {
 				background-color: black;
 				color: white;
 				clear: both;
@@ -46,18 +50,6 @@
 			} #footer .copyright {
 				text-align: center;
 				padding: 32px;
-			} #box {
-  				display: flex;
- 				flex-wrap: nowrap;
-			} #box .model {
-				width: 50%;
-				float:left;
-			} #box .model img {
-				margin: 10px 10px 10px 10px;
-			}
-			 #box .product {
-				width: 50%
-				
 			}
 		</style>
 	</head>
@@ -110,8 +102,18 @@
 			<h3>BEE:PICK</h3>
 			<span>BLUEBEE 모델의 추천 코디</span>
 			<hr>
-			<div id='box'>
-				<div class='model'>dd</div>
+				<div class="container">
+				  <div class="row">
+   					 <div class="col-sm-3">
+					<img src='./image/model.jpg'>
+				</div>
+				<div class="col-sm-9">
+					<div class="row">
+					dd
+				</div>
+				 <div class="col-4 col-sm-6">
+				 12
+				 </div>
 			</div>
 		</div>
 		<br>
